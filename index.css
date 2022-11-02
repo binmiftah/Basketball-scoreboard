@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --colour-primary: #1B244A;
+    --colour-onPrimary: #F94F6D;
+    --colour-white: #fff;
+    --colour-black: #000;
+    --colour-secondary: #9AABD8;
+    --colour-winning: rgb(32, 32, 230);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--colour-onPrimary);
+}
+
+.colour-blue {
+    color: var(--colour-winning);
+}
+
+.main {
+    background-color: var(--colour-primary);
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--colour-white);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.score-bg {
+    border-radius: 10px;
+    color: var(--colour-onPrimary);
+    background-color: var(--colour-black);
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 100px;
+    font-family: 'Cursed Timer ULiL';
+    text-align: center;
+    padding: 40px 30px 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: block;
+    background-color: transparent;
+    border: 2px solid var(--colour-secondary);
+    border-radius: 5px;
+    padding: 12px 12px 8px;
+    font-size: 20px;
+    font-family: 'Cursed Timer ULiL';
+    color: var(--colour-secondary);
+}
+
+.reset-button {
+    text-align: center;
+    font: 20px Verdana;
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: var(--colour-white);
+    color: var(--colour-primary);
+    border: none;
+    border-radius: 10px;
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(-40%);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+.score-txt {
+    /* transform: translateY(-20px); */
+    animation-name: drop;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    backface-visibility: hidden;
+    /* transition: all 1.3s; */
+}
+

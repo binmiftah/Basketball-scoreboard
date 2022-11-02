@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="score-bg">
+                    <p id="home-score" class="txt">0</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="homeAdd1(), homeAnimate()" class="btn">+1</button>
+                    <button onclick="homeAdd2(), homeAnimate()" class="btn">+2</button>
+                    <button onclick="homeAdd3(), homeAnimate()" class="btn">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score-bg">
+                    <p id="guest-score" class="txt">0</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="guestAdd1(), guestAnimate()" class="btn">+1</button>
+                    <button onclick="guestAdd2(), guestAnimate()" class="btn">+2</button>
+                    <button onclick="guestAdd3(), guestAnimate()" class="btn">+3</button>
+                </div>
+            </div>
+        </div>
+        <button onclick="reset()" class="reset-button">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
