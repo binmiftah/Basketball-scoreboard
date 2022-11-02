@@ -91,15 +91,15 @@ window.addEventListener('click', function () {
     
 });
 
-function homeAnimate() {
-    if (homeScore.classList.value = 'score-txt') {
-        alert(true);
-        homeScore.classList.remove('score-txt');
-        homeScore.classList.add('score-txt');
-    } else {homeScore.classList.add('score-txt')};
-}
+// function homeAnimate() {
+//     if (homeScore.classList.value = 'score-txt') {
+//         alert(true);
+//         homeScore.classList.remove('score-txt');
+//         homeScore.classList.add('score-txt');
+//     } else {homeScore.classList.add('score-txt')};
+// }
 
-function guestAnimate() {
-    guestScore.classList.remove('score-txt');
-    guestScore.classList.add('score-txt');
-}
+// function guestAnimate() {
+//     guestScore.classList.remove('score-txt');
+//     guestScore.classList.add('score-txt');
+// }
