@@ -21,22 +21,38 @@ let guest = 0;
 //     goal += 3;
 // }
 
+// function homeAnimate() {
+
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
+//     }
+//     if (homeScore.classList.contains('score-txt') === true) {
+//         homeScore.classList.remove('score-txt');
+//         homeScore.classList.add('score-txt');
+//     } else {
+//         homeScore.classList.add('score-txt');
+//     }
+// }
+
 function homeAdd1() {
     score += 1;
     homeScore.textContent = score;
     home = parseInt(homeScore.innerHTML);
+    homeAnimate();
 }
 
 function homeAdd2() {
     score += 2;
     homeScore.textContent = score;
     home = parseInt(homeScore.innerHTML);
+    homeAnimate();
 }
 
 function homeAdd3() {
     score += 3;
     homeScore.textContent = score;
     home = parseInt(homeScore.innerHTML);
+    homeAnimate();
 }
 
 let goal = 0;
@@ -91,13 +107,7 @@ window.addEventListener('click', function () {
     
 });
 
-// function homeAnimate() {
-//     if (homeScore.classList.value = 'score-txt') {
-//         alert(true);
-//         homeScore.classList.remove('score-txt');
-//         homeScore.classList.add('score-txt');
-//     } else {homeScore.classList.add('score-txt')};
-// }
+
 
 // function guestAnimate() {
 //     guestScore.classList.remove('score-txt');
